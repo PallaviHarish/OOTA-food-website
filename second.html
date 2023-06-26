@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oota</title>
+
+    <link rel="stylesheet" href="./second.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@600&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@600&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="./icons8-bento-100.png">
+</head>
+<body>
+    <div class="container">
+        <div class="loader_container"> <div class="loader"> </div> </div>
+        <div>
+        <img src="icons8-bento-100.png" alt="logo.png" style="width:70px;height:70px;margin: 25px;">
+            <div class="logofont">
+                <p class="logo">OOTA</p>
+            </div>
+        </div>
+        
+    </div>
+    <div class="search" id="search" >
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <p id="search-i"></p>
+    </div>
+    <div class="rect rect1" >
+        <div class="rect-front">
+            <img src="salad.png" alt="icon.png" class="boxIcon">
+
+            <p class="item" id="item1"></p>
+        </div>
+        <div class="rect-back">
+            <div class="nutrition">
+                <p id="cal1"></p>
+                <p id="prot1"></p>
+                <p id="fat1"></p>
+                <p id="carbs1"></p>
+                <p id="fibre1"></p>
+            </div>
+        </div>
+    </div>
+    <div class="rect rect2" >
+        <div class="rect-front">
+            <img src="salad.png" alt="icon.png" class="boxIcon">
+            <p class="item" id="item2"></p>
+        </div>
+        <div class="rect-back">
+            <div class="nutrition">
+                <p id="cal2"></p>
+                <p id="prot2"></p>
+                <p id="fat2"></p>
+                <p id="carbs2"></p>
+                <p id="fibre2"></p>
+            </div>
+        </div>
+    </div>
+    <div class="rect rect3" >
+        <div class="rect-front">
+            <img src="salad.png" alt="icon.png" class="boxIcon">
+            <p class="item" id="item3"></p>
+        </div>
+        <div class="rect-back">
+            <div class="nutrition">
+                <p id="cal3"></p>
+                <p id="prot3"></p>
+                <p id="fat3"></p>
+                <p id="carbs3"></p>
+                <p id="fibre3"></p>
+            </div>
+        </div>
+    </div>
+    <div class="rect rect4" >
+        <div class="rect-front">
+            <img src="salad.png" alt="icon.png" class="boxIcon">
+            <p class="item" id="item4"></p>
+        </div>
+        <div class="rect-back">
+            <div class="nutrition">
+                <p id="cal4"></p>
+                <p id="prot4"></p>
+                <p id="fat4"></p>
+                <p id="carbs4"></p>
+                <p id="fibre4"></p>
+            </div>
+        </div>
+    </div>
+    <div class="rect rect5" >
+        <div class="rect-front">
+            <img src="salad.png" alt="icon.png" class="boxIcon">
+            <p class="item" id="item5"></p>
+        </div>
+        <div class="rect-back">
+            <div class="nutrition">
+                <p id="cal5"></p>
+                <p id="prot5"></p>
+                <p id="fat5"></p>
+                <p id="carbs5">C</p>
+                <p id="fibre5"></p>
+            </div>
+        </div>
+    </div>
+    <div class="rect rect6" >
+        <div class="rect-front">
+            <img src="salad.png" alt="icon.png" class="boxIcon">
+            <p class="item" id="item6"></p>
+        </div>
+        <div class="rect-back">
+            <div class="nutrition">
+                <p id="cal6"></p>
+                <p id="prot6"></p>
+                <p id="fat6"></p>
+                <p id="carbs6"></p>
+                <p id="fibre6"></p>
+            </div>
+        </div>
+    </div>
+    <div class="rect rect7" >
+        <div class="rect-front">
+            <img src="salad.png" alt="icon.png" class="boxIcon">
+            <p class="item" id="item7"></p>
+        </div>
+        <div class="rect-back">
+            <div class="nutrition">
+                <p id="cal7"></p>
+                <p id="prot7"></p>
+                <p id="fat7"></p>
+                <p id="carbs7"></p>
+                <p id="fibre7"></p>
+            </div>
+        </div>
+    </div>
+    <div class="rect rect8" >
+        <div class="rect-front">
+            <img src="salad.png" alt="icon.png" class="boxIcon">
+            <p class="item" id="item8"></p>
+        </div>
+        <div class="rect-back">
+            <div class="nutrition">
+                <p id="cal8"></p>
+                <p id="prot8"></p>
+                <p id="fat8"></p>
+                <p id="carbs8"></p>
+                <p id="fibre8"></p>
+            </div>
+        </div>
+    </div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="./second.js"></script>
+</body>
+</html>
